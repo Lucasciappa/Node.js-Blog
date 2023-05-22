@@ -166,16 +166,10 @@ router.post('/search', async (req, res) => {
 //  insertPostData();
 
 
-
-
-
-
-
-
-
-
 router.get('/about', (req, res) => {
-    res.render('about');
+    res.render('about', {
+      currentRoute: '/about'
+    });
 });
 
 module.exports = router;
